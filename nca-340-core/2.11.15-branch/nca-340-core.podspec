@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author   = 'Netcetera'
 
   # Specify the location from where the source should be retreived.
-  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/scm/nca340finn/nca-340-4-ios.git', :branch => 'feature/NCA340-4247-replace_UIWebView_with_WKWebView', :submodules => true  }
+  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/scm/nca340finn/nca-340-4-ios.git', :branch => 'master', :submodules => true  }
   s.description = 'Podfile for MobileBanking core product.'
 
   # If this Pod runs only on iOS or OS X, then specify that with one of
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
 
   # A list of resources included with the Pod. These are copied into the
   # target bundle with a build phase script.
-  s.resources = 'lib/**', 'src/common/**/*.xib', 'src/common/**/*.png', 'src/common/**/*.html', 'src/common/**/*.strings', 'src/common/**/*.xml', 'src/common/**/*.mustache', 'src/common/**/termsOfUse.txt', 'src/common/**/touchIDTermsOfUse.txt', 'src/common/**/faceIDTermsOfUse.txt', '/src/common/**/*.trm', 'src/common/**/texts.trm'
+  s.resources = 'src/common/**/*.xib', 'src/common/**/*.png', 'src/common/**/*.html', 'src/common/**/*.strings', 'src/common/**/*.xml', 'src/common/**/*.mustache', 'src/common/**/termsOfUse.txt', 'src/common/**/touchIDTermsOfUse.txt', 'src/common/**/faceIDTermsOfUse.txt', '/src/common/**/*.trm', 'src/common/**/texts.trm'
 
   # Specify a list of frameworks that the application needs to link
   # against for this Pod to work.
@@ -59,12 +59,13 @@ Pod::Spec.new do |s|
   # xcconfig hash.
   #
   # Adds the smartscan framework in the Pod target
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
-  
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/nca-340-core/lib/"' } # , 'OTHER_LDFLAGS' => '-framework smartscan'
+
   # Finally, specify any Pods that this Pod depends on.
-  
+  #
   s.dependency 'GRMustache','7.3.2'
   s.dependency 'JRSwizzle', '1.0'
   s.dependency 'GirdersiOS/All', '1.2.4'
   s.dependency 'ObjectiveLuhn', '1.0.2'
+  s.dependency 'ScanAndPay', '1.1.1-FNN'
 end

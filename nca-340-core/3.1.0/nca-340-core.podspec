@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name     = 'nca-340-core'
-  s.version = '3.0.0-branch'
+  s.version = '3.1.0'
   s.license = { :type => 'commercial', :text => %{
                 The copyright to the computer program(s) herein is the property of Netcetera AG, Switzerland.
                 The program(s) may be used and/or copied only with the written permission of Netcetera AG or
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author   = 'Netcetera'
 
   # Specify the location from where the source should be retreived.
-  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/scm/nca340finn/nca-340-4-ios.git', :branch => "bugfix/NCA340-4579_bug_bashing_session",  :submodules => true  }
+  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/scm/nca340finn/nca-340-4-ios.git', :branch => "develop-3.1",  :submodules => true  }
   s.description = 'Podfile for MobileBanking core product.'
 
   # If this Pod runs only on iOS or OS X, then specify that with one of
@@ -46,13 +46,7 @@ Pod::Spec.new do |s|
   # against for this Pod to work.
 
   # s.public_header_files = 'src/core/**/*.h'
-  # Specify a list of libraries that the application needs to link
-  # against for this Pod to work.
-  #
-  # If this Pod uses ARC, specify it like so.
-  #
-  s.requires_arc = true
-
+ 
   # If this Pod uses ARC, specify it like so.
   #
   s.requires_arc = true

@@ -46,13 +46,7 @@ Pod::Spec.new do |s|
   # against for this Pod to work.
 
   # s.public_header_files = 'src/core/**/*.h'
-  # Specify a list of libraries that the application needs to link
-  # against for this Pod to work.
-  #
-  # If this Pod uses ARC, specify it like so.
-  #
-  s.requires_arc = true
-
+ 
   # If this Pod uses ARC, specify it like so.
   #
   s.requires_arc = true
@@ -71,5 +65,5 @@ Pod::Spec.new do |s|
   s.dependency 'JRSwizzle', '1.0'
   s.dependency 'GirdersiOS/All', '1.2.4'
   s.dependency 'ObjectiveLuhn', '1.0.2'
-  s.dependency 'ScanAndPay', '1.1.1-FNN'
+  s.dependency 'ScanAndPay', '1.6.1-fnn'
 end

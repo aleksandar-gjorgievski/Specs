@@ -59,14 +59,13 @@ Pod::Spec.new do |s|
   # xcconfig hash.
   #
   # Adds the smartscan framework in the Pod target
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/nca-340-core/lib/"' , 'OTHER_LDFLAGS' => '-framework ScanAndPayQR' }
-  s.framework  = 'ScanAndPayQR'
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   
-  s.vendored_frameworks = 'lib/ScanAndPayQR.framework'
   # Finally, specify any Pods that this Pod depends on.
   #
   s.dependency 'GRMustache','7.3.2'
   s.dependency 'JRSwizzle', '1.0'
   s.dependency 'GirdersiOS/All', '1.2.4'
   s.dependency 'ObjectiveLuhn', '1.0.2'
+  s.dependency 'ScanAndPay', '1.6.1-fnn'
 end

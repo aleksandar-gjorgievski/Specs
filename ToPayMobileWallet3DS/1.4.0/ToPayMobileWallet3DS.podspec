@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.source_files     = '**/ToPayMobileWallet3DS/**/*.{swift,h,m}'
     s.resource_bundles = { 'ToPayMobileWallet3DS' => ['**/ToPayMobileWallet3DS/**/*.{storyboard,xib,xcassets,json,imageset,png,strings}', 
     												  '**/ToPayMobileWalletUI/**/*.xcassets'] }
-    s.dependency 'TransaktSDK', '2.11.0'
+    s.dependency 'TransaktSDK', '2.3.0'
     s.dependency 'ToPayMobileWallet'
     s.dependency 'ToPayMobileWalletUI'
     s.dependency 'ToPayMobileWalletBranding'

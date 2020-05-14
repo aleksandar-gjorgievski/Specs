@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
     s.requires_arc     = true
     s.swift_version    = '5.0'
     s.source_files     = '**/ToPayMobileWalletFirebase/**/*.{swift}'
-    s.dependency 'Firebase/Analytics', '~> 6.22'
-    s.dependency 'Firebase/Messaging', '~> 6.22'
+    s.dependency 'Firebase/Analytics', '~> 6.24'
+    s.dependency 'Firebase/Messaging', '~> 6.24'
     s.dependency 'ToPayMobileWallet'
     s.ios.frameworks = 'StoreKit'
     s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }

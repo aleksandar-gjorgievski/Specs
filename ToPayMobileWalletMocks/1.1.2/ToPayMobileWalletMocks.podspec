@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.swift_version    = '5.0'
     s.source_files = '**/ToPayMobileWalletMocks/**/*.{swift,h,m}'
     s.dependency 'ToPayMobileWallet', '< 1.2.0'
-    s.dependency 'GirdersSwift', '< 1.2.0'
+    s.dependency 'GirdersSwift'
 
 end
 

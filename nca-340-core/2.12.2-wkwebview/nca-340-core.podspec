@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name     = 'nca-340-core'
-  s.version = '2.12.1-wkwebview'
+  s.version = '2.12.2-wkvebview'
   s.license = { :type => 'commercial', :text => %{
                 The copyright to the computer program(s) herein is the property of Netcetera AG, Switzerland.
                 The program(s) may be used and/or copied only with the written permission of Netcetera AG or
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author   = 'Netcetera'
 
   # Specify the location from where the source should be retreived.
-  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/scm/nca340finn/nca-340-4-ios.git', :branch => 'feature/NCA340-4247_WKWebView', :submodules => true  }
+  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/scm/nca340finn/nca-340-4-ios.git', :tag => '2.12/2.12.2-wkWebView', :submodules => true  }
   s.description = 'Podfile for MobileBanking core product.'
 
   # If this Pod runs only on iOS or OS X, then specify that with one of

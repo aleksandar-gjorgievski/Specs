@@ -63,5 +63,5 @@ Pod::Spec.new do |s|
 
   # Finally, specify any Pods that this Pod depends on.
   #
-  s.dependency 'nca-340-core', '2.12.1-wkwebview'
+  s.dependency 'nca-340-core', '2.12.2-wkwebview'
 end

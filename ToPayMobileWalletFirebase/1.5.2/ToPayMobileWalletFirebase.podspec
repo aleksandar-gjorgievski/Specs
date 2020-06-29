@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 
     s.name             = "ToPayMobileWalletFirebase"
-    s.version          = "1.5.3"
+    s.version          = "1.5.2"
     s.summary          = "A framework containing all necessary components to use Firebase in TPMW"
     s.homepage         = "https://www.netcetera.com"
     s.license          = {:type => 'Netcetera', :text => 'Netcetera'}
     s.author           = {"Netcetera" => "topay-ios-dev@netcetera.com"}
-    s.source           = {:git => "https://extranet.netcetera.biz/bitbucket/scm/nca422tpmw/topay-mobile-wallet-ios.git", :tag => '1.5.3'}
+    s.source           = {:git => "https://extranet.netcetera.biz/bitbucket/scm/nca422tpmw/topay-mobile-wallet-ios.git", :tag => '1.5.2'}
     s.static_framework = true
     s.platform         = :ios, "11.0"
     s.requires_arc     = true

@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author   = 'Netcetera'
 
   # Specify the location from where the source should be retreived.
-  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/projects/NCA340FINN/repos/entris-core-ios/browse', :branch => "master",  :submodules => true  }
+  s.source = { :git => 'https://extranet.netcetera.biz/bitbucket/scm/nca340finn/entris-core-ios.git', :branch => "master",  :submodules => true  }
   s.description = 'Podfile for MobileBanking esprit core product.'
 
   # If this Pod runs only on iOS or OS X, then specify that with one of

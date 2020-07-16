@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.source_files ='src/main/**/*.{h,m,swift}'
   
   s.swift_version = '4.2'
-  s.exclude_files = 'src/common/resources/OfflineResources.bundle', 'src/common/resources/Info.plist', 'src/core/rolotec/**/*.{h,m}'
+  s.exclude_files = 'src/common/resources/OfflineResources.bundle', 'src/common/resources/Info.plist', 'src/core/rolotec/**/*.{h,m}', 'src/main/objc/main.m'
 
 
   # A list of resources included with the Pod. These are copied into the
